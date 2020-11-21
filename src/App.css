@@ -16,6 +16,7 @@
 .snake-square {
   position: absolute;
   background-color: #000;
+  margin: 1px;
   width: 2%;
   height: 2%;
   left: 0;

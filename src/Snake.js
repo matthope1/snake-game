@@ -8,10 +8,18 @@ class Snake extends Component {
             length: 1,
         }
     }
+
+    getStyle(coordinate) {
+        const style =  {
+            top: coordinate[0] * 2 + "%",
+            left: coordinate[1] * 2 + "%"
+        }
+        return style;
+    }
     
     render() {
         const snakeSquares = this.state.position.map((coordinate) =>
-            <p className="snake-square">{coordinate}</p>
+            <p className="snake-square" style={this.getStyle(coordinate)}></p>
         )
 
         return(
