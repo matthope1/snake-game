@@ -5,7 +5,7 @@ class Snake extends Component {
         super();
         this.state = {
             position: [[0,0],[0,1]],
-            length: 1,
+            direction: "up",
         }
     }
 
@@ -16,8 +16,11 @@ class Snake extends Component {
         }
         return style;
     }
-    
+    // TODO: make event listener for keypressses from window
+    // TODO: arrow keypresses should change this.state.direction 
+
     render() {
+
         const snakeSquares = this.state.position.map((coordinate) =>
             <p className="snake-square" style={this.getStyle(coordinate)}></p>
         )

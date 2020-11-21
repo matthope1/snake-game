@@ -12,11 +12,11 @@
   margin: 30px auto;
 }
 
-
 .snake-square {
   position: absolute;
   background-color: #000;
-  margin: 1px;
+  border: solid;
+  border-color: pink;
   width: 2%;
   height: 2%;
   left: 0;
